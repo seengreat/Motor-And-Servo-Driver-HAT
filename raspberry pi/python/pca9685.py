@@ -37,7 +37,7 @@ DC_MOTOR_INB2        = 4
 class PCA9685:
     def __init__(self):
         self.i2c = smbus.SMBus(1)
-        self.dev_addr = 0x5f
+        self.dev_addr = 0x7f
         self.write_reg(MODE1, 0x00)
 
     def write_reg(self, reg, value):
